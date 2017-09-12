@@ -18,7 +18,7 @@
     "prepush": "npm test",
     "test": "jest",
     "build": "babel src --out-dir dist --ignore __tests__/*.js",
-    "release": "npm test && npm run build && standard-version && npm publish"
+    "release": "npm test && npm run build && standard-version"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
