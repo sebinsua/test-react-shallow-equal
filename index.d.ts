@@ -1,3 +1,6 @@
+// <reference types="jasmine" />
+// <reference types="enzyme" />
+
 declare module 'jasmine' {
     interface Matchers {
         toShallowEqual(expected: any): boolean;
