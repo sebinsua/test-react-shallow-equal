@@ -1,13 +1,16 @@
 {
   "name": "test-react-shallow-equals",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Unit test against inadvertent performance problems",
   "main": "dist/index.js",
   "typings": "index.d.ts",
   "author": "Seb Insua <me@sebinsua.com>",
   "license": "MIT",
   "lint-staged": {
-    "*.{js,jsx}": ["prettier --write", "git add"]
+    "*.{js,jsx}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "scripts": {
     "commitmsg": "validate-commit-msg",
