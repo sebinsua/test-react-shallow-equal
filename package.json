@@ -1,6 +1,6 @@
 {
   "name": "test-react-shallow-equals",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Unit test against inadvertent performance problems",
   "main": "dist/index.js",
   "typings": "index.d.ts",
