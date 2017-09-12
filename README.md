@@ -17,7 +17,7 @@ The `jasmine.addMatchers` method must be within a spec or a `beforeEach`, `befor
 import { jasmineShallowEqualMatcher } from 'test-react-shallow-equals'
 
 describe('some suite', () => {
-  jasmine.addMatchers(customMatchers)
+  jasmine.addMatchers(jasmieShallowEqualMatcher)
 
   it('some test', () => {
     // ...
