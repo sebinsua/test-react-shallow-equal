@@ -1,10 +1,10 @@
-# `test-react-shallow-equals`
+# `test-react-shallow-equal`
 > Unit test against inadvertent performance problems.
 
 ## Install
 
 ```sh
-npm install --save-dev test-react-shallow-equals
+npm install --save-dev test-react-shallow-equal
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ npm install --save-dev test-react-shallow-equals
 The `jasmine.addMatchers` method must be within a spec or a `beforeEach`, `beforeAll`, etc.
 
 ```js
-import { jasmineShallowEqualMatcher } from 'test-react-shallow-equals'
+import { jasmineShallowEqualMatcher } from 'test-react-shallow-equal'
 
 describe('some suite', () => {
   jasmine.addMatchers(jasmieShallowEqualMatcher)
@@ -29,7 +29,7 @@ describe('some suite', () => {
 ### Jest
 
 ```js
-import { jestShallowEqualMatcher } from 'test-react-shallow-equals'
+import { jestShallowEqualMatcher } from 'test-react-shallow-equal'
 
 expect.extend(jestShallowEqualMatcher)
 

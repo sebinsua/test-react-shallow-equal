@@ -1,5 +1,5 @@
 {
-  "name": "test-react-shallow-equals",
+  "name": "test-react-shallow-equal",
   "version": "0.0.3",
   "description": "Unit test against inadvertent performance problems",
   "main": "dist/index.js",
