@@ -42,11 +42,10 @@ The `jasmine.addMatchers` method must be within a spec or a `beforeEach`, `befor
 import { jasmineShallowEqualMatcher } from 'test-react-shallow-equal'
 
 describe('some suite', () => {
-  jasmine.addMatchers(jasmineShallowEqualMatcher)
+  beforeAll(() => jasmine.addMatchers(jasmineShallowEqualMatcher))
 
   it('some test', () => {
     // ...
   })
-
 })
 ```
