@@ -22,6 +22,18 @@ The `jest` tests give examples of how to use this to test [`mapStateToProps`](./
 npm install --save-dev test-react-shallow-equal
 ```
 
+### Installing `jest` matchers
+
+```js
+import { jestShallowEqualMatcher } from 'test-react-shallow-equal'
+
+expect.extend(jestShallowEqualMatcher)
+
+test('should x when y', () => {
+  // ...
+})
+```
+
 ### Installing `jasmine` matchers
 
 The `jasmine.addMatchers` method must be within a spec or a `beforeEach`, `beforeAll`, etc, and must be run before testing code.
@@ -36,17 +48,5 @@ describe('some suite', () => {
     // ...
   })
 
-})
-```
-
-### Installing `jest` matchers
-
-```js
-import { jestShallowEqualMatcher } from 'test-react-shallow-equal'
-
-expect.extend(jestShallowEqualMatcher)
-
-test('should x when y', () => {
-  // ...
 })
 ```
