@@ -1,6 +1,6 @@
 {
   "name": "test-react-shallow-equal-build",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Unit test against inadvertent performance problems",
   "private": true,
   "author": "Seb Insua <me@sebinsua.com>",
@@ -18,7 +18,7 @@
     "postinstall": "lerna bootstrap && lerna link",
     "test": "lerna run test",
     "build": "lerna run build",
-    "release": "lerna run test && lerna run build && standard-version && lerna publish --skip-git"
+    "release": "lerna run test && lerna run build && standard-version && lerna publish --skip-git --force-publish"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
