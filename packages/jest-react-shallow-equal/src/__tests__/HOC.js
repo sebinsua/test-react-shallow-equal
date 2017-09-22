@@ -2,9 +2,9 @@ import React from 'react'
 import { withProps } from 'recompose'
 import { shallow } from 'enzyme'
 
-import shallowEqualMatcher from '../matchers/jest'
+import installShallowEqualMatcher from '..'
 
-expect.extend(shallowEqualMatcher)
+installShallowEqualMatcher()
 
 test('should match when a HOC *is not* shallow equal', () => {
   const invalidHoc = withProps(() => ({
@@ -20,8 +20,8 @@ test('should match when a HOC *is not* shallow equal', () => {
   shallow(WrappedComponent())
   shallow(WrappedComponent())
 
-  const firstPropsReceived = spy.mock.calls[0][0]
-  const secondPropsReceived = spy.mock.calls[1][0]
+  const [firstPropsReceived] = spy.mock.calls[0]
+  const [secondPropsReceived] = spy.mock.calls[1]
 
   expect(firstPropsReceived).not.toShallowEqual(secondPropsReceived)
 })
@@ -44,8 +44,8 @@ test('should match when a HOC *is* shallow equal', () => {
   shallow(WrappedComponent())
   shallow(WrappedComponent())
 
-  const firstPropsReceived = spy.mock.calls[0][0]
-  const secondPropsReceived = spy.mock.calls[1][0]
+  const [firstPropsReceived] = spy.mock.calls[0]
+  const [secondPropsReceived] = spy.mock.calls[1]
 
   expect(firstPropsReceived).toShallowEqual(secondPropsReceived)
 })

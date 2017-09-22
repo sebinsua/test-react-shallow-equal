@@ -1,0 +1,23 @@
+{
+  "name": "test-react-shallow-equal",
+  "version": "0.0.4",
+  "description": "Unit test against inadvertent performance problems",
+  "main": "dist/index.js",
+  "typings": "index.d.ts",
+  "author": "Seb Insua <me@sebinsua.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src --out-dir dist --ignore __tests__/*.js",
+    "release": "npm test && npm run build && standard-version"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^2.8.8",
+    "babel-jest": "^21.0.2",
+    "enzyme": "^2.9.1",
+    "jest": "^21.0.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1"
+  }
+}
