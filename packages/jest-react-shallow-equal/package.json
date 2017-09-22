@@ -1,6 +1,6 @@
 {
   "name": "jest-react-shallow-equal",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Unit test against inadvertent performance problems",
   "main": "dist/index.js",
   "typings": "index.d.ts",
@@ -11,7 +11,7 @@
     "build": "babel src --out-dir dist --ignore __tests__/*.js"
   },
   "dependencies": {
-    "test-react-shallow-equal": "^0.2.0"
+    "test-react-shallow-equal": "^0.2.1"
   },
   "devDependencies": {
     "@types/jest": "^21.1.0",
