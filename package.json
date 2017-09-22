@@ -1,12 +1,15 @@
 {
   "name": "test-react-shallow-equal-build",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Unit test against inadvertent performance problems",
   "private": true,
   "author": "Seb Insua <me@sebinsua.com>",
   "license": "MIT",
   "lint-staged": {
-    "*.{js,jsx}": ["prettier --write", "git add"]
+    "*.{js,jsx}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "scripts": {
     "commitmsg": "validate-commit-msg",
@@ -15,7 +18,8 @@
     "postinstall": "lerna bootstrap && lerna link",
     "test": "lerna run test",
     "build": "lerna run build",
-    "release": "lerna run test && lerna run build && standard-version"
+    "release": "lerna run test && lerna run build && standard-version",
+    "publish": "lerna publish"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
