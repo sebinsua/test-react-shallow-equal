@@ -1,6 +1,6 @@
-import shallowEqualMatcher from '../matchers/jest'
+import installShallowEqualMatcher from '..'
 
-expect.extend(shallowEqualMatcher)
+installShallowEqualMatcher()
 
 test('should match when mapStateToProps *is not* shallow equal', () => {
   const invalidMapStateToProps = _ => ({

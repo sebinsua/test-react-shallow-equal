@@ -1,4 +1,4 @@
-import shallowEqual from '../shallowEqual'
+import shallowEqual from './shallowEqual'
 
 const stringify = v => JSON.stringify(v)
 

@@ -1,8 +1,9 @@
 // @flow
 
-import createCompareWithShallowEqual, {
+import {
+  createCompareWithShallowEqual,
   makeLazyErrorMessageCreator
-} from './createCompareWithShallowEqual'
+} from 'test-react-shallow-equal'
 
 const shallowEqualMatcher = {
   toShallowEqual(actual: mixed, expected: mixed) {
@@ -19,4 +20,8 @@ const shallowEqualMatcher = {
   }
 }
 
-export default shallowEqualMatcher
+const installShallowEqualMatcher = () => {
+  expect.extend(shallowEqualMatcher)
+}
+
+export default installShallowEqualMatcher

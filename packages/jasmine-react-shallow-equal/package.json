@@ -1,0 +1,26 @@
+{
+  "name": "jasmine-react-shallow-equal",
+  "version": "0.0.4",
+  "description": "Unit test against inadvertent performance problems",
+  "main": "dist/index.js",
+  "typings": "index.d.ts",
+  "author": "Seb Insua <me@sebinsua.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jasmine --config=./jasmine.json",
+    "build": "babel src --out-dir dist --ignore __tests__/*.js",
+    "release": "npm test && npm run build && standard-version"
+  },
+  "dependencies": {
+    "test-react-shallow-equal": "^0.0.4"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.6.0",
+    "enzyme": "^2.9.1",
+    "jasmine": "^2.8.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1",
+    "recompose": "^0.25.0"
+  }
+}
