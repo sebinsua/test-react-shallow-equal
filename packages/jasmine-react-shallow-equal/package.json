@@ -8,8 +8,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jasmine --config=./jasmine.json",
-    "build": "babel src --out-dir dist --ignore __tests__/*.js",
-    "release": "npm test && npm run build && standard-version"
+    "build": "babel src --out-dir dist --ignore __tests__/*.js"
   },
   "dependencies": {
     "test-react-shallow-equal": "^0.0.4"

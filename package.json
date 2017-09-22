@@ -15,7 +15,7 @@
     "postinstall": "lerna bootstrap && lerna link",
     "test": "lerna run test",
     "build": "lerna run build",
-    "release": "lerna run release"
+    "release": "lerna run test && lerna run build && standard-version"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
